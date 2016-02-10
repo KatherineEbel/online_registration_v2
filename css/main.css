@@ -49,7 +49,7 @@ textarea {
 }
 
 select {
- -webkit-appearance: none;  need to remove appearance to match height of other textareas
+ -webkit-appearance: none;  /*need to remove appearance to match height of other textareas*/
  background: url(arrow.png) no-repeat right center;
  line-height: 3.5em;
  text-indent: 1em;
@@ -90,7 +90,6 @@ footer {
   width: 90%;
   text-align: center;
   border-bottom: 8px double #558C89;
-  border-bottom-width: 90%;
   margin: 0 auto;
   padding-top: 1em;
   padding-bottom: 2em;
@@ -129,15 +128,8 @@ button:hover {
 
 input:focus,
 textarea:focus {
-  opacity: 100%;
   border-color: #D9853B;
   box-shadow: 0 1px 0 rgba(0,0,0,0.08) inset;
-}
-
-input:blur,
-textarea:blur {
-  text-align: left;
-  opacity: 50%;
 }
 
 input[type="text"],
@@ -147,13 +139,16 @@ textarea,
 select  {
   font-size: 1em;
   color: #738391;
-  opacity: 50%;
   background-color: #ececea;
   font-weight: 300; 
   width: 100%;
   height: 3.5em;
   margin-bottom: 1.2em;
   box-shadow: 0 1px 0 rgba(0,0,0,0.08) inset;
+}
+
+#zip {
+	width: 50%;	
 }
 
 /****************************************
@@ -172,7 +167,6 @@ input[type="radio"] + label span{
   height: 20px;
   margin: 0 10px 10px 0;
   border: 2px solid #558C89;
-  border-radius: radial-gradient(#eee, #aaa);
 }
 
 input[type="radio"] + label span {
@@ -189,7 +183,7 @@ input[type="checkbox"]:checked + label span::before {
 }
 
 input[type="radio"]:checked + label span {
-  background-image: radial-gradient(#D9853B, #D9853B);
+  background-color: #D9853B;
 }
 
 ::-webkit-input-placeholder { 

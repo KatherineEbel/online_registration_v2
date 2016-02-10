@@ -20,11 +20,11 @@
       <fieldset>
         <legend>Contact Information</legend>
         <label for="name">Full Name</label>
-        <input type="text" id="name" name="user_name" placeholder="Required" aria-describedby="name-format" required aria-required=”true” pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+"  title="firstname lastname">
+        <input type="text" id="name" name="user_name" placeholder="Required" required aria-required="true" pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+"  title="firstname lastname">
         <label for="mail">Email Address</label>
-        <input type="email" id="mail" name="user_email" placeholder="Required" aria-describedby="name-format" required>
+        <input type="email" id="mail" name="user_email" placeholder="Required" required aria-required="true">
         <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="user_phone">
+        <input type="tel" id="phone" name="user_phone" placeholder="(000)000-0000">
         <label for="address">Street Address</label>
         <input type="text" id="address" name="user_address">
         <label for="city">City</label>
@@ -95,7 +95,7 @@
         <input type="checkbox" id="javascript" value="javascript_news" name="newsletter_kind"><label for="javascript" class="light"><span></span>Javascript News</label>
         <label class="newsletter-label">Newsletter format</label>
         <input type="radio" id="html_pref" value="html_format" name="format_preference"><label for="html_pref" class="light"><span></span>HTML</label><br>
-        <input type="radio" id="text_pref" value="text_format" name="format_preference"><label for="text" class="light"><span></span>Plain text</label>
+        <input type="radio" id="text_pref" value="text_format" name="format_preference"><label for="text_pref" class="light"><span></span>Plain text</label>
         <label class="newsletter-label">Other topics you'd like to hear about</label>
         <textarea></textarea>
       </fieldset>
