@@ -50,11 +50,17 @@ textarea {
 
 select {
  -webkit-appearance: none;  /*need to remove appearance to match height of other textareas*/
- background: url(arrow.png) no-repeat right center;
+ -moz-appearance: none;
+ background: #ececea url(../img/arrow_down.png) no-repeat center;
+ background-position: right 20px bottom 20px;
  line-height: 3.5em;
+ background-color: #ececea;
  text-indent: 1em;
 }
 
+select:focus {
+	outline: none;
+}
 fieldset {
   margin-top: 20px;
   margin-bottom: 30px;
@@ -127,7 +133,8 @@ button:hover {
 }
 
 input:focus,
-textarea:focus {
+textarea:focus,
+#state:focus {
   border-color: #D9853B;
   box-shadow: 0 1px 0 rgba(0,0,0,0.08) inset;
 }
@@ -151,6 +158,11 @@ select  {
 #zip {
 	width: 50%;	
 }
+
+label[for="zip"] {
+		display: block;
+		width: 100%;
+	}
 
 /****************************************
 *  custom checkbox and radio buttons    *
@@ -201,6 +213,30 @@ input[type="radio"]:checked + label span {
     margin: 0 auto;
     max-width: 800px;
   }
+
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	textarea,
+	select {
+		width: 60%;
+		display: inline-block;
+	}
+	
+	label,
+	label[for="zip"] {
+		width: 30%;
+		display: inline-block;
+	}
+	
+	.newsletter-label {
+		display: block;
+		width: 100%;
+	}
+	
+	#zip {
+		width: 30%;
+	}
 }
 
 @media (min-width: 1024px) {

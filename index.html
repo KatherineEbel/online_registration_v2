@@ -16,7 +16,7 @@
       <h2>Signup for our newsletter</h2>
       <span>Get the latest news on how your code is doing right in your inbox</span>
     </div>
-      <form>
+      <form action="index.html" id="registration">
       <fieldset>
         <legend>Contact Information</legend>
         <label for="name">Full Name</label>
@@ -97,7 +97,7 @@
         <input type="radio" id="html_pref" value="html_format" name="format_preference"><label for="html_pref" class="light"><span></span>HTML</label><br>
         <input type="radio" id="text_pref" value="text_format" name="format_preference"><label for="text_pref" class="light"><span></span>Plain text</label>
         <label class="newsletter-label">Other topics you'd like to hear about</label>
-        <textarea></textarea>
+        <textarea form="registration" name="topic_request"></textarea>
       </fieldset>
       <button type="submit">Sign Up</button>
     </form>
